@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    {% if page.title %}
+      {{ page.title }} · WASM Lab
+    {% else %}
+      WASM Lab
+    {% endif %}
+  </title>
+
+  <link rel="stylesheet" href="/wasm-lab/style.css">
+</head>
+
+<body>
+  {% include header.html %}
+
+  <main class="content">
+    {{ content }}
+  </main>
+
+  {% include footer.html %}
+</body>
+</html>
