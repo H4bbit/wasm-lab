@@ -20,6 +20,26 @@ Canvas controlado por JavaScript.
 
 ---
 
+## Exemplo Rust
+
+Primeiro teste de bloco de código com syntax highlight:
+
+```rust
+pub struct Framebuffer {
+    width: usize,
+    height: usize,
+    pixels: Vec<u32>,
+}
+
+impl Framebuffer {
+    pub fn clear(&mut self, color: u32) {
+        self.pixels.fill(color);
+    }
+}
+```
+
+---
+
 ## Objetivo
 
 Quero explorar:
