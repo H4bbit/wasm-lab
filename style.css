@@ -45,6 +45,7 @@ canvas {
     max-width: 100%;
 }
 
+/* Código inline */
 code {
     background: #313244; /* surface1 */
     color: #fab387;      /* peach */
@@ -53,6 +54,7 @@ code {
     font-size: 0.95em;
 }
 
+/* Blocos de código */
 pre {
     background: #11111b; /* crust */
     color: #cdd6f4;
@@ -60,6 +62,7 @@ pre {
     border-radius: 12px;
     overflow-x: auto;
     border: 1px solid #313244;
+    margin: 1.2em 0;
 }
 
 pre code {
@@ -67,6 +70,43 @@ pre code {
     color: inherit;
     padding: 0;
 }
+
+/* Jekyll/Rouge syntax highlighting */
+.highlight,
+.highlighter-rouge,
+figure.highlight {
+    background: #11111b !important;
+    color: #cdd6f4 !important;
+    border: 1px solid #313244;
+    border-radius: 12px;
+    overflow: auto;
+    margin: 1.2em 0;
+}
+
+.highlight pre,
+figure.highlight pre {
+    background: transparent !important;
+    color: inherit !important;
+    margin: 0;
+    padding: 16px;
+}
+
+.highlight code,
+.highlighter-rouge {
+    background: transparent !important;
+    color: inherit !important;
+}
+
+/* Cores do Rouge/Rust/linguagens */
+.highlight .k, .highlight .kd, .highlight .kn, .highlight .kt { color: #cba6f7; } /* mauve */
+.highlight .nf, .highlight .nc, .highlight .nt { color: #89b4fa; } /* blue */
+.highlight .s, .highlight .sa, .highlight .sb, .highlight .sc, .highlight .dl { color: #a6e3a1; } /* green */
+.highlight .m, .highlight .mi, .highlight .mf { color: #fab387; } /* peach */
+.highlight .c, .highlight .cm, .highlight .cp, .highlight .cs { color: #6c7086; } /* overlay0 */
+.highlight .o, .highlight .ow { color: #f5c2e7; } /* pink */
+.highlight .p { color: #cdd6f4; } /* text */
+.highlight .na, .highlight .nb, .highlight .bp { color: #f9e2af; } /* yellow */
+.highlight .err { color: #f38ba8; } /* red */
 
 ul, ol {
     padding-left: 1.5em;
